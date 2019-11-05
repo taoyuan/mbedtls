@@ -1,0 +1,27 @@
+{
+  "name": "mbedtls",
+  "description": "mbedtls",
+  "keywords": "mbedtls",
+  "authors": {
+    "name": "Yuan Tao",
+    "url": "https://github.com/taoyuan"
+  },
+  "build": {
+    "flags": [
+      "-Icrypto/include",
+      "-Icrypto/library",
+      "-Iinclude",
+      "-Ilibrary"
+    ],
+    "srcFilter": [
+      "+<crypto/library>",
+      "+<library>"
+    ]
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoyuan/mbedtls"
+  }
+}
